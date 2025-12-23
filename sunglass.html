@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Eyewear Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: black;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgb(255, 255, 255);
+            border: 1px solid rgb(238, 238, 238);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: rgb(249, 249, 249);
+        }
+
+        .card h3 {
+            font-size: 1rem;
+            margin: 20px 0 8px;
+            color: rgb(51, 51, 51);
+            font-weight: 600;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: black;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .buy-btn {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+        }
+
+        .buy-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Elite Eyewear</h1>
+
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" alt="Aviators">
+            <h3>Classic Gold Aviators</h3>
+            <p class="price">₹2,499</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://image.the-woggles.com/cache/catalog/products/woggles_new_image_9_12_2022/midnight_express_polarized_wayfarer_sunglasses_model_view_3_10_04_24_new_400x400.jpg" alt="Wayfarer">
+            <h3>Midnight Wayfarer</h3>
+            <p class="price">₹1,899</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400" alt="Round">
+            <h3>Retro Round Frames</h3>
+            <p class="price">₹1,299</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?w=400" alt="Sport">
+            <h3>Polarized Sport Edge</h3>
+            <p class="price">₹3,499</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://i.etsystatic.com/16162443/r/il/1df693/4123254920/il_570xN.4123254920_f0bx.jpg" alt="Clubmaster">
+            <h3>Vintage Clubmaster</h3>
+            <p class="price">₹2,199</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1508296695146-257a814070b4?w=400" alt="Rectangle">
+            <h3>Slim Rectangular</h3>
+            <p class="price">₹999</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1591076482161-42ce6da69f67?w=400" alt="Transparent">
+            <h3>Clear Crystal Frames</h3>
+            <p class="price">₹1,599</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509695507497-903c140c43b0?w=400" alt="Tortoise">
+            <h3>Tortoise Shell Lux</h3>
+            <p class="price">₹2,799</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.net-a-porter.com/variants/images/1647597302155446/ou/w2000_q60.jpg" alt="Cat Eye">
+            <h3>Bold Cat Eye</h3>
+            <p class="price">₹1,749</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.lulus.com/images/product/xlarge/2973130_597522.jpg" alt="Mirror">
+            <h3>Mirrored Sunset Aviators</h3>
+            <p class="price">₹2,999</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

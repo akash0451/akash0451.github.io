@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Luxury Fragrances</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman';
+        }
+
+        body {
+            background-color: rgb(63, 62, 62); 
+            color: rgb(255, 255, 255);
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: rgb(233, 116, 14); 
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            color: rgb(102, 173, 194);
+            letter-spacing: 2px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgb(29, 28, 28);
+            border: 1px solid #333;
+            transition: all 0.5s ease;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        
+        .img-container {
+            width: 100%;
+            height: 320px;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            transition: opacity 0.5s;
+        }
+
+       
+        .info {
+            padding: 20px 15px;
+        }
+
+        .brand {
+            font-size: 12px;
+            color: rgb(212, 175, 55);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            color: rgb(122, 166, 95);
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            margin-bottom: 25px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .discover-btn {
+            
+            color: rgb(212, 175, 55);
+            border: 1px solid #d4af37;
+            padding: 12px 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+
+        .discover-btn:hover {
+            background: rgb(212, 175, 55);
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AURA</h1>
+        <p>The Essence of Sophistication</p>
+    </header>
+
+    <div class="product-grid">
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?w=500" alt="Perfume 1">
+            </div>
+            <div class="info">
+                <span class="brand">L'ÉLITE</span>
+                <h3>Midnight Oud</h3>
+                <p class="price">₹7,499</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500" alt="Perfume 2">
+            </div>
+            <div class="info">
+                <span class="brand">PURE</span>
+                <h3>Bergamot Bloom</h3>
+                <p class="price">₹5,299</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=500" alt="Perfume 3">
+            </div>
+            <div class="info">
+                <span class="brand">MAJESTY</span>
+                <h3>Velvet Rose</h3>
+                <p class="price">₹6,899</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="http://kannaujheaven.com/cdn/shop/files/Sandalwood_48b611c9-46b8-477a-ad29-68078f88039e.png?v=1705912192" alt="Perfume 4">
+            </div>
+            <div class="info">
+                <span class="brand">NOIR</span>
+                <h3>Deep Sandalwood</h3>
+                <p class="price">₹8,199</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=500" alt="Perfume 5">
+            </div>
+            <div class="info">
+                <span class="brand">VIVID</span>
+                <h3>Oceanic Mist</h3>
+                <p class="price">₹4,599</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://www.myperfumeshop.com.au/cdn/shop/files/Al_Haramain_Amber_Oud_Gold_Edition_EDP_-_Google_Search_-_216.jpg?v=1682575016&width=1000" alt="Perfume 6">
+            </div>
+            <div class="info">
+                <span class="brand">ROYALE</span>
+                <h3>Amber Gold</h3>
+                <p class="price">₹9,999</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://fimgs.net/mdimg/secundar/o.54340.jpg" alt="Perfume 7">
+            </div>
+            <div class="info">
+                <span class="brand">ESSENCE</span>
+                <h3>Jasmine Night</h3>
+                <p class="price">₹3,999</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://mancaveinc.com/cdn/shop/files/ManCave_Retainer_July-2024_Cedar-Wood_Eau-De-Toilette_SQ.jpg?v=1720787205" alt="Perfume 8">
+            </div>
+            <div class="info">
+                <span class="brand">TERRA</span>
+                <h3>Cedar & Smoke</h3>
+                <p class="price">₹5,799</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=500" alt="Perfume 9">
+            </div>
+            <div class="info">
+                <span class="brand">FLORAL</span>
+                <h3>Wild Peony</h3>
+                <p class="price">₹4,899</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-container">
+                <img src="https://fimgs.net/mdimg/secundar/o.107949.jpg" alt="Perfume 10">
+            </div>
+            <div class="info">
+                <span class="brand">LUXE</span>
+                <h3>Imperial Musk</h3>
+                <p class="price">₹12,499</p>
+                <button class="discover-btn">Add to Bag</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

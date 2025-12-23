@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shirt Studio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Garamond', serif, 'Segoe UI';
+        }
+
+        body {
+            background-color: rgb(250, 249, 246); 
+            padding: 50px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            color: rgb(44, 62, 80);
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+            border-color: #e0e0e0;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+        }
+
+        .img-box {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+
+       
+        .details {
+            padding: 25px 15px;
+            text-align: center;
+        }
+
+        .category {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #999;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 19px;
+            color: rgb(51, 51, 51);
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #444;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .action-btn {
+            background: none;
+            border: 1px solid #333;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .buy-now {
+            background: #333;
+            color: #fff;
+        }
+
+        .buy-now:hover {
+            background: #555;
+            border-color: #555;
+        }
+
+        .wishlist:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Shirt Studio</h1>
+    </header>
+
+    <div class="product-grid">
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500" alt="White Formal">
+            </div>
+            <div class="details">
+                <span class="category">Formal Wear</span>
+                <h3>Classic Crisp White</h3>
+                <p class="price">₹1,499</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500" alt="Blue Formal">
+            </div>
+            <div class="details">
+                <span class="category">Business</span>
+                <h3>Sky Blue Oxford</h3>
+                <p class="price">₹1,699</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.gymshark.com/_next/image?url=https:%2F%2Fimages.ctfassets.net%2Fwl6q2in9o7k3%2Fk67jgvvN9fbgJkH9LfJLT%2F8747419ebd788a8886890c3b6b5cee27%2FSoftSculpt-Ecom-PDP_Product_Image_-_22772349__1_.png&w=1664&q=75" alt="Black Casual">
+            </div>
+            <div class="details">
+                <span class="category">Evening</span>
+                <h3>Midnight Onyx Shirt</h3>
+                <p class="price">₹1,899</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://wrogn.com/cdn/shop/files/1_e09af890-54c5-45bc-8ac1-4e934f43ed7f.webp?v=1743164296" alt="Checked Shirt">
+            </div>
+            <div class="details">
+                <span class="category">Casual</span>
+                <h3>Harvest Checkered</h3>
+                <p class="price">₹1,299</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1589310243389-96a5483213a8?w=500" alt="Linen Shirt">
+            </div>
+            <div class="details">
+                <span class="category">Summer</span>
+                <h3>Natural Linen Blend</h3>
+                <p class="price">₹2,299</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI782P06938001_lifestyle?$rl_4x5_pdp$" alt="Denim Shirt">
+            </div>
+            <div class="details">
+                <span class="category">Rugged</span>
+                <h3>Indigo Denim Shirt</h3>
+                <p class="price">₹1,999</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://cdn.media.amplience.net/i/lmg/3240065EGGSHELL-3240065CP22-03-2024_01-2100.jpg" alt="Patterned">
+            </div>
+            <div class="details">
+                <span class="category">Casual</span>
+                <h3>Micro-Print Button Down</h3>
+                <p class="price">₹1,549</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+            
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI710965413001_alternate10?$rl_4x5_pdp$" alt="Striped">
+            </div>
+            <div class="details">
+                <span class="category">Formal</span>
+                <h3>Vertical Stripe Professional</h3>
+                <p class="price">₹1,799</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://levi.in/cdn/shop/files/245770254_01_Styleshot.jpg?v=1741080097" alt="Floral">
+            </div>
+            <div class="details">
+                <span class="category">Vacation</span>
+                <h3>Island Breeze Floral</h3>
+                <p class="price">₹1,399</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://content.moss.co.uk/images/extraextralarge/966902909_03.jpg" alt="Dark Blue">
+            </div>
+            <div class="details">
+                <span class="category">Smart Casual</span>
+                <h3>Royal Navy Poplin</h3>
+                <p class="price">₹2,099</p>
+                <div class="btn-container">
+                    <button class="action-btn buy-now">Add to Cart</button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

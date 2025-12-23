@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Store</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            padding-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; 
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin: 15px 0 5px;
+            color: rgb(68, 68, 68);
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: rgb(39, 174, 96);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: rgb(52, 152, 219);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .buy-btn:hover {
+            background-color: rgb(41, 128, 185);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Premium T-Shirt Collection</h1>
+
+    <div class="product-grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="White Tee">
+            <h3>Classic White Tee</h3>
+            <p class="price">₹499</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" alt="Black Tee">
+            <h3>Urban Black Tee</h3>
+            <p class="price">₹599</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400" alt="Graphic Tee">
+            <h3>Graphic Print</h3>
+            <p class="price">₹799</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=400" alt="Polo">
+            <h3>Navy Polo</h3>
+            <p class="price">₹1,299</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=400" alt="Grey Tee">
+            <h3>Heather Grey</h3>
+            <p class="price">₹899</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400" alt="Yellow Tee">
+            <h3>Summer Yellow</h3>
+            <p class="price">₹649</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400" alt="Long Sleeve">
+            <h3>Full Sleeve Tee</h3>
+            <p class="price">₹1,149</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400" alt="White Polo">
+            <h3>Premium White Polo</h3>
+            <p class="price">₹1,499</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1554568218-0f1715e72254?w=400" alt="Striped">
+            <h3>Vertical Striped</h3>
+            <p class="price">₹449</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1527719327859-c6ce80353573?w=400" alt="Blue Tee">
+            <h3>Classic Blue</h3>
+            <p class="price">₹999</p>
+            <button class="buy-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bottom Bar | Premium Pants</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-weight: 800;
+            font-size: 2.2rem;
+            color: #222;
+            text-transform: uppercase;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .img-wrap {
+            width: 100%;
+            height: 350px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .size-tags {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .size-tags span {
+            background: rgba(255,255,255,0.9);
+            padding: 4px 8px;
+            font-size: 0.65rem;
+            font-weight: bold;
+            border-radius: 4px;
+            color: #333;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .style-label {
+            color: #3498db;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #111;
+            margin-bottom: 20px;
+        }
+
+        .add-btn {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #111;
+            background: transparent;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 6px;
+        }
+
+        .add-btn:hover {
+            background: #111;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Bottom Bar</h1>
+    </header>
+
+    <div class="product-grid">
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=500" alt="Denim">
+               
+            </div>
+            <div class="content">
+                <span class="style-label">Denim</span>
+                <h3>Slim Fit Indigo Jeans</h3>
+                <p class="price">₹2,499</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://img01.ztat.net/article/spp-media-p1/57bd762fec6d4454b889415eb1647109/e7517ae727f4467d9802de45c76e2c36.jpg?imwidth=762" alt="Chinos">
+               
+            </div>
+            <div class="content">
+                <span class="style-label">Formal</span>
+                <h3>Desert Sand Chinos</h3>
+                <p class="price">₹1,899</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://www.sportsdirect.com/images/imgzoom/48/48715101_xxl.jpg" alt="Joggers">
+               
+            </div>
+            <div class="content">
+                <span class="style-label">Athleisure</span>
+                <h3>Tech-Fleece Joggers</h3>
+                <p class="price">₹1,499</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500" alt="Cargos">
+                
+            </div>
+            <div class="content">
+                <span class="style-label">Utility</span>
+                <h3>Tactical Cargo Pants</h3>
+                <p class="price">₹2,999</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://cdn.lookastic.com/charcoal-dress-pants/url-medium-1334464.jpg" alt="Grey Trousers">
+            </div>
+            <div class="content">
+                <span class="style-label">Corporate</span>
+                <h3>Charcoal Dress Trousers</h3>
+                <p class="price">₹3,299</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI290958073002_alternate10?$rl_4x5_pdp$" alt="Shorts">
+            </div>
+            <div class="content">
+                <span class="style-label">Summer</span>
+                <h3>Linen Pull-on Pants</h3>
+                <p class="price">₹1,799</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?w=500" alt="Black Denim">
+            </div>
+            <div class="content">
+                <span class="style-label">Denim</span>
+                <h3>Jet Black Skinny Fit</h3>
+                <p class="price">₹2,299</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?w=500" alt="Relaxed">
+            </div>
+            <div class="content">
+                <span class="style-label">Casual</span>
+                <h3>Relaxed Fit Corduroy</h3>
+                <p class="price">₹2,699</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1475178626620-a4d074967452?w=500" alt="Olive Chinos">
+            </div>
+            <div class="content">
+                <span class="style-label">Formal</span>
+                <h3>Olive Stretch Chinos</h3>
+                <p class="price">₹1,999</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-wrap">
+                <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=500" alt="Track Pants">
+            </div>
+            <div class="content">
+                <span class="style-label">Gym</span>
+                <h3>Performance Track Pants</h3>
+                <p class="price">₹1,299</p>
+                <button class="add-btn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
