@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SkyFashionStore Cart</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #cart {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #cart h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .cart-item img {
+      width: 100px;
+      border-radius: 6px;
+      margin-right: 20px;
+    }
+
+    .cart-details {
+      flex: 1;
+    }
+
+    .cart-details h3 {
+      margin: 0 0 5px;
+      color: #222;
+    }
+
+    .cart-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .quantity button {
+      padding: 5px 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .quantity span {
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .remove {
+      background: none;
+      border: none;
+      color: #e63946;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .cart-summary {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid #ddd;
+      text-align: right;
+    }
+
+    .cart-summary p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
+
+    .cart-summary input {
+      padding: 10px;
+      width: 200px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .checkout {
+      display: block;
+      background: #000;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      margin-top: 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .checkout:hover {
+      background: #333;
+    }
+
+    .cart-summary a {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .cart-summary a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .cart-item {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cart-item img {
+        margin-bottom: 10px;
+      }
+
+      .cart-summary {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<section id="cart">
+  <h2>Your Cart</h2>
+
+  <div class="cart-item">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Product Image">
+    <div class="cart-details">
+      <h3>Aero-Swift Runners</h3>
+      <p>Size: 8 | Color: Red</p>
+      <p>Price:₹4,999 </p>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <button class="remove">Remove</button>
+    </div>
+  </div>
+
+  <div class="cart-summary">
+    <p>Subtotal:₹4,999 </p>
+    <p>Shipping: Free</p>
+    <p><strong>Total: ₹4,999</strong></p>
+
+    <input type="text" placeholder="Promo code">
+    <button class="checkout">Proceed to Checkout</button>
+    <a href="shop.html">Continue Shopping</a>
+  </div>
+</section>
+
+</body>
+</html>
